@@ -84,7 +84,7 @@ class FlatHashTable {
     IndexType len = bucket_list_[key].second;
     // printf("retrieve for key %u\n", key);
     // printf("  start: %lld  len %lld\n", start, len);
-    return std::make_pair(&(indices_[start]), &(indices_[start + len]));
+    return std::make_pair(&(indices_[start]), &(indices_[start]) + len);
   }
 
  private:
