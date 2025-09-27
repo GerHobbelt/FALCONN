@@ -102,7 +102,7 @@ struct ComputeNumberOfHashFunctions<DenseVector<CoordinateType>> {
           &(params->last_cp_dimension));
     } else {
       throw LSHNNTableSetupError(
-          "Cannot set paramters for unknown hash "
+          "Cannot set parameters for unknown hash "
           "family.");
     }
   }
@@ -129,7 +129,7 @@ struct ComputeNumberOfHashFunctions<SparseVector<CoordinateType, IndexType>> {
           &(params->last_cp_dimension));
     } else {
       throw LSHNNTableSetupError(
-          "Cannot set paramters for unknown hash "
+          "Cannot set parameters for unknown hash "
           "family.");
     }
   }
